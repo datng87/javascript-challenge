@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>UFO Sighting</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-dark bg-dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            UFO Sighting
+            <img src="./static/images/ufo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          </a>
+        </div>
+    </nav>
+    <!-- background image -->
+    <div class="b-image">
+        <h1 style="margin-top:115px" class="animate1 centerwhite"> UFO Sightings</h1>
+        <h4 class="animate2 centerwhite"> Still thinking UFO is a joke?</h4>
+        <h4 class="animate4 centerpurple"> Behold and prepare for the truth!</h4>
+    </div>
+
+    <!-- body content -->
+    <div class="container-fluid">
+        <div class="row d-flex flex-wrap">
+            <div class="col-3 text-center" style="background-color: #2b495f">
+                <br>
+                <div class="row centerwhite" >
+                    <div class ="col-6 offset-3">
+                        <h5> Filter search</h5>
+                        <label for="startDate">Input a date:</label>
+                        <input type="date" id="startDate" class="form-control" value="2010-01-01">
+                        <br>
+                        <button type="button" id = "filter_button">Apply Filter</button>
+                        <br>
+                        <br>
+                        <button type="button" id = "clear_filter">Clear Filter</button>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-9 text-center " style="background-color: #2b495f">
+                <br>
+                <div class="row centerwhite" >
+                    <div class="table-responsive">
+                        <table class="table centerwhite table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col" style="width: 10%">datetime</th>
+                                <th scope="col" style="width: 10%">city</th>
+                                <th scope="col" style="width: 10%">state</th>
+                                <th scope="col" style="width: 10%">country</th>
+                                <th scope="col" style="width: 10%">shape</th>
+                                <th scope="col" style="width: 10%">durationMinutes</th>
+                                <th scope="col" style="width: 40%">comments</th>
+                              </tr>
+                            </thead>
+                            <tbody id="ufo_table">
+
+                            </tbody>
+                          </table>
+                    </div>
+
+                </div>
+                <br>
+            </div>
+
+          </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-dark text-left" >
+        <span class="centerwhite">UFO Sightings</span>
+        <img src="./static/images/ufo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> 
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./static/js/data.js"></script>
+    <script src="./static/js/app.js"></script>
+    
+  </body>
+</html>
