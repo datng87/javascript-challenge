@@ -18,8 +18,9 @@ populate(table_body,tableData);
 var input_form = d3.select("#startDate");
 var input_val = input_form.attr("value");
 
+//take input value
 input_form.on("change", function() {
-    input_val = d3.event.target.value;
+    input_val = d3.select("#startDate").property("value");
   });
 
 //filter event
@@ -54,6 +55,9 @@ filter_button.on("click",handleClick);
 
 var clear_filter = d3.select("#clear_filter");
 function clearFilter (){
+    // clear filter input form
+    document.getElementById('startDate').value = ""; 
+    input_val = d3.select("#startDate").property("value");
     //remove current data
     table_body.selectAll("*").remove();
     //populate original data
