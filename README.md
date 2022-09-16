@@ -2,4 +2,4 @@ On this webpage, I created a table dynamically based upon a UFO sighting dataset
 
 Tool used: JavaScript, HTML, and CSS, and D3.js.
 
-The demo website can be found here: ## https://datng87.github.io/javascript-filters/
+The demo website can be found here: <strong> https://datng87.github.io/javascript-filters/ </strong>
